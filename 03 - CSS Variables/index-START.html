@@ -62,11 +62,8 @@
     const inputs = document.querySelectorAll('.controls input');
 
     function handleUpdate() {
-      // What is a data-set -> object that contains all the data attributes from that specific element
-      // Data attributes also take emojis.
       // fall back on nothing
       const suffix = this.dataset.sizing || '';
-      // what is documentElement?
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
 
